@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function ProductHighlight() {
   return (
     <section className="relative w-full bg-black">
@@ -19,14 +20,14 @@ export default function ProductHighlight() {
           </p>
           <div className="mt-6 flex flex-col sm:flex-row items-center gap-4">
             <span className="text-2xl font-bold text-white">$39.99</span>
-            <a
+            <Link
               href="#buy"
               className="inline-flex w-auto items-center justify-center rounded-full
                          border border-white px-6 py-2 text-sm font-semibold text-white
                          shadow-lg transition-transform hover:scale-105"
             >
               Buy now
-            </a>
+            </Link>
           </div>
         </div>
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function CareEssentials() {
   return (
     <section id="care" className="relative w-full bg-black">
@@ -15,14 +16,14 @@ export default function CareEssentials() {
     tools — just simple care that fits into your daily life.
   </p>
 
-  <a
+  <Link
     href="#buy"
     className="mt-6 inline-flex items-center justify-center rounded-full
                border border-white px-6 py-2 text-sm font-semibold text-white
                shadow-lg transition-transform hover:scale-105"
   >
     Add to cart
-  </a>
+  </Link>
 </div>
 
 

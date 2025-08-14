@@ -64,7 +64,7 @@ export default function Header() {
               <li><Link onClick={() => setOpen(false)} href="#care" className="block py-2">Care</Link></li>
               <li><Link onClick={() => setOpen(false)} href="#faq" className="block py-2">FAQ</Link></li>
             </ul>
-            <a
+            <Link
               href="#buy"
               onClick={() => setOpen(false)}
               className="mt-4 inline-flex w-full items-center justify-center rounded-full
@@ -72,7 +72,7 @@ export default function Header() {
                          transition-transform hover:scale-105"
             >
               Buy
-            </a>
+            </Link>
           </div>
         </div>
 

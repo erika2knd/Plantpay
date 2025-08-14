@@ -1,3 +1,4 @@
+import Link from "next/link";
 export const metadata = { title: "Shipping — Monstera" };
 
 export default function ShippingPage() {
@@ -15,9 +16,9 @@ export default function ShippingPage() {
           <li>Stripe is connected in test mode for portfolio purposes.</li>
         </ul>
 
-        <a href="/" className="mt-8 inline-block text-white hover:underline">
+        <Link href="/" className="mt-8 inline-block text-white hover:underline">
           ← Back to home
-        </a>
+        </Link>
       </div>
     </main>
   );

@@ -1,4 +1,6 @@
+import Link from "next/link";
 export const metadata = { title: "Returns — Monstera" };
+
 
 export default function ReturnsPage() {
   return (
@@ -14,9 +16,9 @@ export default function ReturnsPage() {
             <li>Demo content only (no real returns are processed).</li>
             <li>Stripe is connected in test mode for portfolio purposes.</li>
           </ul>
-          <a href="/" className="mt-8 inline-block text-white hover:underline">
+           <Link href="/" className="mt-8 inline-block text-white hover:underline">
             ← Back to home
-          </a>
+          </Link>
         </div>
       </main>
     </>

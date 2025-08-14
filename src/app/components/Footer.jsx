@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-black border-t border-white/10 text-zinc-300">
@@ -30,18 +31,18 @@ export default function Footer() {
                 </span>
               </summary>
               <ul className="px-4 pb-3 space-y-2 text-sm">
-                <li><a href="#benefits" className="block hover:text-white">Benefits</a></li>
-                <li><a href="#product" className="block hover:text-white">Product</a></li>
-                <li><a href="#faq" className="block hover:text-white">FAQ</a></li>
+                <li><Link href="#benefits" className="block hover:text-white">Benefits</Link></li>
+                <li><Link href="#product" className="block hover:text-white">Product</Link></li>
+                <li><Link href="#faq" className="block hover:text-white">FAQ</Link></li>
               </ul>
             </details>
 
             <div className="hidden md:block">
               <h4 className="text-white font-medium mb-4">Navigation</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#benefits" className="hover:text-white">Benefits</a></li>
-                <li><a href="#product" className="hover:text-white">Product</a></li>
-                <li><a href="#faq" className="hover:text-white">FAQ</a></li>
+                <li><Link href="#benefits" className="hover:text-white">Benefits</Link></li>
+                <li><Link href="#product" className="hover:text-white">Product</Link></li>
+                <li><Link href="#faq" className="hover:text-white">FAQ</Link></li>
               </ul>
             </div>
           </div>
@@ -60,18 +61,18 @@ export default function Footer() {
                 </span>
               </summary>
               <ul className="px-4 pb-3 space-y-2 text-sm">
-                <li><a href="/shipping" className="block hover:text-white">Shipping</a></li>
-                <li><a href="/returns" className="block hover:text-white">Returns</a></li>
-                <li><a href="#" className="block hover:text-white">Contact</a></li>
+                <li><Link href="/shipping" className="block hover:text-white">Shipping</Link></li>
+                <li><Link href="/returns" className="block hover:text-white">Returns</Link></li>
+                <li><Link href="#" className="block hover:text-white">Contact</Link></li>
               </ul>
             </details>
 
             <div className="hidden md:block">
               <h4 className="text-white font-medium mb-4">Help</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="/shipping" className="hover:text-white">Shipping</a></li>
-                <li><a href="/returns" className="hover:text-white">Returns</a></li>
-                <li><a href="#" className="hover:text-white">Contact</a></li>
+                <li><Link href="/shipping" className="hover:text-white">Shipping</Link></li>
+                <li><Link href="/returns" className="hover:text-white">Returns</Link></li>
+                <li><Link href="#" className="hover:text-white">Contact</Link></li>
               </ul>
             </div>
           </div>
@@ -79,12 +80,12 @@ export default function Footer() {
 
         <div className="mt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div className="flex items-center justify-center md:justify-start gap-4">
-            <a href="#" className="hover:text-white transition-colors" aria-label="Instagram">
+            <Link href="#" className="hover:text-white transition-colors" aria-label="Instagram">
               <img src="/icons/InstagramLogo.png" alt="" className="h-5 w-5" />
-            </a>
-            <a href="#" className="hover:text-white transition-colors" aria-label="Twitter">
+            </Link>
+            <Link href="#" className="hover:text-white transition-colors" aria-label="Twitter">
               <img src="/icons/TwitterLogo.png" alt="" className="h-5 w-5" />
-            </a>
+            </Link>
           </div>
           <div className="text-center md:text-right text-xs text-zinc-500">
             © {new Date().getFullYear()} Monstera Store. All rights reserved.

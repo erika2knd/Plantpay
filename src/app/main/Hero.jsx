@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="relative min-h-[88vh] w-full bg-black">
@@ -17,7 +19,7 @@ export default function Hero() {
          Living art for your interior. A monstera is more than just a plant — it’s a statement piece that breathes life into any space, bringing freshness and a touch of nature into your home.
         </p>
 
-        <a
+        <Link
           href="#"
           id="buy"
           className="mt-8 inline-flex items-center justify-center border border-white rounded-full
@@ -25,7 +27,7 @@ export default function Hero() {
                      shadow-lg  transition-transform hover:scale-105"
         >
           Buy
-        </a>
+        </Link>
       </div>
     </section>
   );
