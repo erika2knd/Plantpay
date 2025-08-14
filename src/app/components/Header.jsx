@@ -25,12 +25,12 @@ export default function Header() {
           </ul>
 
           <a
-            href="#buy"
-            className="hidden md:inline-flex items-center gap-2 rounded-full border border-white  text-white
-                       px-8 py-2 text-sm font-medium transition-transform hover:scale-105"
-          >
-            Buy
-          </a>
+  href="#buy"
+  className="btn-effect px-8 py-2 text-sm font-medium hidden md:inline-flex items-center gap-2"
+>
+  <span className="btn-effect__fill" aria-hidden />
+  <span className="btn-effect__label">Buy</span>
+</a>
 
           <button
             type="button"

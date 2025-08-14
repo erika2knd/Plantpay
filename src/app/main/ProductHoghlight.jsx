@@ -21,13 +21,13 @@ export default function ProductHighlight() {
           <div className="mt-6 flex flex-col sm:flex-row items-center gap-4">
             <span className="text-2xl font-bold text-white">$39.99</span>
             <Link
-              href="#buy"
-              className="inline-flex w-auto items-center justify-center rounded-full
-                         border border-white px-6 py-2 text-sm font-semibold text-white
-                         shadow-lg transition-transform hover:scale-105"
-            >
-              Buy now
-            </Link>
+  href="#buy"
+  className="btn-effect px-6 py-2 text-sm font-semibold inline-flex w-auto items-center justify-center shadow-lg"
+>
+  <span className="btn-effect__fill" aria-hidden />
+  <span className="btn-effect__label">Buy now</span>
+</Link>
+
           </div>
         </div>
 

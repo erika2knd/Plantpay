@@ -37,15 +37,17 @@ export default function Benefits() {
 
                 <div className="mt-4 flex flex-wrap gap-2">
   {card.tags.map((t) => (
-    <span key={t} className="chip" tabIndex={0}>
-      <span className="chip__fill" aria-hidden />
-      <span className="chip__label">{t}</span>
+    <span
+      key={t}
+      className="inline-flex items-center justify-center border border-white rounded-full 
+                 px-3 py-1 text-xs font-medium text-white 
+                 shadow-lg transition-transform hover:scale-105"
+    >
+      {t}
     </span>
-  
+  ))}
+</div>
 
-
-                  ))}
-                </div>
               </div>
             </article>
           ))}

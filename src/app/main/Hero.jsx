@@ -19,15 +19,11 @@ export default function Hero() {
          Living art for your interior. A monstera is more than just a plant — it’s a statement piece that breathes life into any space, bringing freshness and a touch of nature into your home.
         </p>
 
-        <Link
-          href="#"
-          id="buy"
-          className="mt-8 inline-flex items-center justify-center border border-white rounded-full
-                     px-24 py-3 text-sm md:text-base font-semibold text-white
-                     shadow-lg  transition-transform hover:scale-105"
-        >
-          Buy
-        </Link>
+        <Link href="#buy" id="buy" className="btn-effect px-24 py-3 text-sm md:text-base font-semibold mt-8">
+  <span className="btn-effect__fill" aria-hidden />
+  <span className="btn-effect__label">Buy</span>
+</Link>
+
       </div>
     </section>
   );

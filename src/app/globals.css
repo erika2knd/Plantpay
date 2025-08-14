@@ -27,43 +27,31 @@ body {
 /* Если у тебя были кастомные компоненты (chip и т.п.),
    их держим после @tailwind components в блоке @layer components */
 @layer components {
-  .chip {
-    @apply relative inline-flex items-center rounded-full border border-white/80 px-3 py-1 text-xs font-medium text-white select-none isolate overflow-hidden focus:outline-none focus:ring-2 focus:ring-emerald-300;
+  .btn-effect {
+    @apply relative inline-flex items-center justify-center rounded-full border border-white font-medium text-white select-none isolate overflow-hidden focus:outline-none focus:ring-2 focus:ring-emerald-300 transition-transform duration-300 hover:scale-105;
   }
 
-  .chip__fill {
+  .btn-effect__fill {
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, .9);
+    background: rgba(255, 255, 255, 0.9);
     clip-path: inset(0 100% 0 0 round 999px);
     transition: clip-path 800ms cubic-bezier(.25, .8, .25, 1);
   }
 
-  .chip:hover .chip__fill,
-  .chip:focus-visible .chip__fill {
+  .btn-effect:hover .btn-effect__fill,
+  .btn-effect:focus-visible .btn-effect__fill {
     clip-path: inset(0 0 0 0 round 999px);
   }
 
-  .chip__label {
+  .btn-effect__label {
     position: relative;
     z-index: 1;
     transition: color .3s ease;
   }
 
-  .chip:hover .chip__label,
-  .chip:focus-visible .chip__label {
+  .btn-effect:hover .btn-effect__label,
+  .btn-effect:focus-visible .btn-effect__label {
     color: #0a0a0a;
-  }
-}
-
-/* Скрыть горизонтальный скролл, если использовала */
-@layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
   }
 }

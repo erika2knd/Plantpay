@@ -17,13 +17,12 @@ export default function CareEssentials() {
   </p>
 
   <Link
-    href="#buy"
-    className="mt-6 inline-flex items-center justify-center rounded-full
-               border border-white px-6 py-2 text-sm font-semibold text-white
-               shadow-lg transition-transform hover:scale-105"
-  >
-    Add to cart
-  </Link>
+  href="#buy"
+  className="btn-effect px-6 py-2 text-sm font-semibold mt-6 inline-flex items-center justify-center shadow-lg"
+>
+  <span className="btn-effect__fill" aria-hidden />
+  <span className="btn-effect__label">Add to cart</span>
+</Link>
 </div>
 
 
