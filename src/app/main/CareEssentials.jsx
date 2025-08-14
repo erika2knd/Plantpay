@@ -1,6 +1,6 @@
 export default function CareEssentials() {
   return (
-    <section className="relative w-full bg-black">
+    <section id="care" className="relative w-full bg-black">
       <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2">
         <div className="flex flex-col justify-center px-6 py-16 md:py-24 items-start">
   <h4 className="text-sm tracking-[0.2em] uppercase text-zinc-400">

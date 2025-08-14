@@ -4,7 +4,6 @@ export default function Benefits() {
   return (
     <section id="benefits" className="bg-black py-10 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
-        {/* Заголовок */}
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-white text-3xl md:text-4xl font-semibold">
             Why Monstera Is the Perfect Plant for Any Home

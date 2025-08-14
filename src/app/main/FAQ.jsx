@@ -13,7 +13,7 @@ export default function FAQ() {
   {faqs.map(({ q, a }) => (
     <details
       key={q}
-      className="group w-full md:w-[calc(50%-12px)] rounded-4xl border border-white/10 bg-white/5 px-5 py-4
+      className="group w-full md:w-[calc(50%-12px)] rounded-[30px] border border-white/10 bg-white/5 px-5 py-4
                  open:bg-white/7 open:shadow-lg transition"
             >
               <summary
