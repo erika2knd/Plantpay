@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BuyButton from "../components/BuyButton";
 
 export default function Hero() {
   return (
@@ -19,10 +20,9 @@ export default function Hero() {
          Living art for your interior. A monstera is more than just a plant — it’s a statement piece that breathes life into any space, bringing freshness and a touch of nature into your home.
         </p>
 
-        <Link href="#buy" id="buy" className="btn-effect px-24 py-3 text-sm md:text-base font-semibold mt-8">
-  <span className="btn-effect__fill" aria-hidden />
-  <span className="btn-effect__label">Buy</span>
-</Link>
+        <div className="mt-8 ">
+        <BuyButton className="px-24 py-3 text-base md:text-lg font-semibold mt-8" label="Buy" quantity={1} />
+      </div>
 
       </div>
     </section>

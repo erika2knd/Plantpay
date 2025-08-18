@@ -3,7 +3,7 @@ export const metadata = { title: "Shipping — Monstera" };
 
 export default function ShippingPage() {
   return (
-    <main className="min-h-screen bg- text-zinc-200" style={{ backgroundImage: "url('/image/monstera-hero.jpg')" }}>
+    <main className="min-h-screen bg-text-zinc-200" style={{ backgroundImage: "url('/image/monstera-hero.jpg')" }}>
       <div className="mx-auto max-w-3xl px-6 py-48">
         <h1 className="text-3xl font-semibold text-white">Shipping</h1>
         <p className="mt-4 font-semibold text-zinc-400">

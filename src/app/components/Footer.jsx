@@ -63,7 +63,7 @@ export default function Footer() {
               <ul className="px-4 pb-3 space-y-2 text-sm">
                 <li><Link href="/shipping" className="block hover:text-white">Shipping</Link></li>
                 <li><Link href="/returns" className="block hover:text-white">Returns</Link></li>
-                <li><Link href="#" className="block hover:text-white">Contact</Link></li>
+                <li><Link href="/contact" className="block hover:text-white">Contact</Link></li>
               </ul>
             </details>
 
@@ -72,7 +72,7 @@ export default function Footer() {
               <ul className="space-y-2 text-sm">
                 <li><Link href="/shipping" className="hover:text-white">Shipping</Link></li>
                 <li><Link href="/returns" className="hover:text-white">Returns</Link></li>
-                <li><Link href="#" className="hover:text-white">Contact</Link></li>
+                <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
               </ul>
             </div>
           </div>
