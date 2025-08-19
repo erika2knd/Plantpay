@@ -16,10 +16,10 @@ export default function ShippingPage() {
           <li>Stripe is connected in test mode for portfolio purposes.</li>
         </ul>
 
-        <a href="/" className="btn-effect mt-8 px-6 py-2 inline-flex">
+        <Link href="/" className="btn-effect mt-8 px-6 py-2 inline-flex">
           <span className="btn-effect__fill" aria-hidden />
           <span className="btn-effect__label">Back to home</span>
-        </a>
+        </Link>
       </div>
     </main>
   );

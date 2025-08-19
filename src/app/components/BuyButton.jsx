@@ -4,13 +4,7 @@ import { loadStripe } from "@stripe/stripe-js";
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
 
-/**
- * Универсальная кнопка Stripe Checkout
- * props:
- * - label?: текст на кнопке
- * - quantity?: число (по умолчанию 1)
- * - className?: доп. классы (px/py/size/width и т.д.)
- */
+
 export default function BuyButton({ label = "Buy now", quantity = 1, className = "" }) {
   const [loading, setLoading] = useState(false);
 

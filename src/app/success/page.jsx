@@ -1,3 +1,4 @@
+import Link from "next/link";
 export const metadata = { title: "Thank you — Monstera" };
 
 export default function SuccessPage() {
@@ -8,10 +9,10 @@ export default function SuccessPage() {
         <p className="mt-3 text-zinc-400">
           Your order is confirmed. A receipt was sent to your email.
         </p>
-        <a href="/" className="btn-effect mt-8 px-6 py-2 inline-flex">
+        <Link href="/" className="btn-effect mt-8 px-6 py-2 inline-flex">
           <span className="btn-effect__fill" aria-hidden />
           <span className="btn-effect__label">Back to home</span>
-        </a>
+        </Link>
       </div>
     </main>
   );

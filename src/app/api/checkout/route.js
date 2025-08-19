@@ -7,7 +7,6 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
 
 export async function POST(req) {
   try {
-    // Проверим ключи и вернём понятную ошибку
     if (!process.env.STRIPE_SECRET_KEY) {
       console.error("[CHECKOUT] Missing STRIPE_SECRET_KEY");
       return NextResponse.json({ message: "Missing STRIPE_SECRET_KEY" }, { status: 500 });
@@ -24,15 +23,12 @@ export async function POST(req) {
       mode: "payment",
       line_items: [
         {
-          // Либо price: "price_XXX" из Dashboard,
           price_data: {
-            currency: "usd",        // поменяй при необходимости
-            unit_amount: 3999,      // сумма в центах ($49.00)
+            currency: "usd",        
+            unit_amount: 3999,      
             product_data: {
               name: "Monstera Deliciosa",
               description: "Healthy cutting in 11cm pot.",
-              // Для локалки лучше временно убрать картинку или поставить HTTPS-URL
-              // images: [`${origin}/image/monstera-hero.jpg`],
             },
           },
           quantity,
@@ -47,7 +43,6 @@ export async function POST(req) {
     return NextResponse.json({ id: session.id }, { status: 200 });
   } catch (e) {
     console.error("[CHECKOUT] error:", e);
-    // вернём текст ошибки клиенту
     const message =
       e?.raw?.message || e?.message || "Failed to create checkout session";
     return NextResponse.json({ message }, { status: 500 });
