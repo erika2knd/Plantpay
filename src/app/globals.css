@@ -1,9 +1,7 @@
-/* Tailwind v3: обязательно три директивы */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Твои переменные темы */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -16,19 +14,16 @@
   }
 }
 
-/* Базовые стили */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-quicksand), system-ui, sans-serif;
-  /* из next/font */
 }
 
-/* Если у тебя были кастомные компоненты (chip и т.п.),
-   их держим после @tailwind components в блоке @layer components */
+
 @layer components {
   .btn-effect {
-    @apply relative inline-flex items-center justify-center rounded-full border border-white font-medium text-white select-none isolate overflow-hidden focus:outline-none focus:ring-2 focus:ring-emerald-300 transition-transform duration-300 hover:scale-105;
+    @apply relative inline-flex items-center justify-center rounded-full border border-white font-medium text-white select-none isolate overflow-hidden focus:outline-none focus:ring-2 focus:ring-white transition-transform duration-300 hover:scale-105;
   }
 
   .btn-effect__fill {

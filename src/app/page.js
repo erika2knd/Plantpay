@@ -5,7 +5,7 @@ import FeatureBanner from "./main/FeatureBanner";
 import CareEssentials from "./main/CareEssentials";
 import WhyItHelps from "./main/WhyItHelps";
 import FAQ from "./main/FAQ";
-import ProductHighlight from "./main/ProductHoghlight";
+import ProductHighlight from "./main/ProductHighlight";
 
 
 export default function Page() {

@@ -1,4 +1,3 @@
-// src/app/api/contact/route.js
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
@@ -6,7 +5,6 @@ const RATE = new Map();
 
 export async function POST(req) {
   try {
-    // простейший rate limit по IP
     const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "local";
     const now = Date.now();
     if (now - (RATE.get(ip) || 0) < 5000) {
@@ -16,7 +14,6 @@ export async function POST(req) {
 
     const { name = "", email = "", message = "", company = "" } = await req.json();
 
-    // honeypot
     if (company) return NextResponse.json({ ok: true }, { status: 200 });
 
     if (!name || !email || !message)
@@ -26,7 +23,7 @@ export async function POST(req) {
     if (!emailOk) return NextResponse.json({ message: "Invalid email" }, { status: 400 });
 
     const RESEND_API_KEY = process.env.RESEND_API_KEY;
-    const TO = process.env.CONTACT_TO; // <- твоя почта (куда)
+    const TO = process.env.CONTACT_TO; 
     const FROM = process.env.CONTACT_FROM || "onboarding@resend.dev";
 
     if (!RESEND_API_KEY || !TO) {

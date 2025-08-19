@@ -2,8 +2,8 @@ export const metadata = { title: "Thank you — Monstera" };
 
 export default function SuccessPage() {
   return (
-    <main className="min-h-screen bg-black text-zinc-100">
-      <div className="mx-auto max-w-2xl px-6 py-16">
+    <main className="min-h-screen bg-black text-zinc-100 flex items-center justify-center" style={{ backgroundImage: "url('/image/monstera-success.jpg')" }}>
+      <div className="mx-auto max-w-2xl px-6 text-center">
         <h1 className="text-3xl font-semibold">Thank you!</h1>
         <p className="mt-3 text-zinc-400">
           Your order is confirmed. A receipt was sent to your email.
@@ -16,3 +16,4 @@ export default function SuccessPage() {
     </main>
   );
 }
+

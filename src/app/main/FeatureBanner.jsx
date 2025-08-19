@@ -19,19 +19,23 @@ export default function FeatureBanner() {
             a touch of the tropics to your everyday life.
           </p>
 
-          <div className="mt-6 inline-flex items-center gap-4 text-sm text-zinc-400">
-            <span className="flex items-center gap-1">
-                <img src="/icons/sun.png" alt="sun" className="h-6 w-6" />Medium light
-            </span>
-            <span className="flex items-center gap-1"> 
-                <img src="/icons/drop.png" alt="leaf" className="h-6 w-6" />
-                 7–10 days
-            </span>
-            <span className="flex items-center gap-1">
-                <img src="/icons/plant.png" alt="leaf" className="h-6 w-6" />
-                 Easy care
-            </span>
-          </div>
+          <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm text-zinc-400">
+  <span className="flex flex-col md:flex-row items-center gap-1">
+    <img src="/icons/sun.png" alt="sun" className="h-6 w-6" />
+    <span>Medium light</span>
+  </span>
+  
+  <span className="flex flex-col md:flex-row items-center gap-1">
+    <img src="/icons/drop.png" alt="water" className="h-6 w-6" />
+    <span>7–10 days</span>
+  </span>
+  
+  <span className="flex flex-col md:flex-row items-center gap-1">
+    <img src="/icons/plant.png" alt="plant" className="h-6 w-6" />
+    <span>Easy care</span>
+  </span>
+</div>
+
         </div>
       </div>
 

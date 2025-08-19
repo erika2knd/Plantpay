@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BuyButton from "../components/BuyButton";
 export default function ProductHighlight() {
   return (
     <section className="relative w-full bg-black">
@@ -20,13 +21,9 @@ export default function ProductHighlight() {
           </p>
           <div className="mt-6 flex flex-col sm:flex-row items-center gap-4">
             <span className="text-2xl font-bold text-white">$39.99</span>
-            <Link
-  href="#buy"
-  className="btn-effect px-6 py-2 text-sm font-semibold inline-flex w-auto items-center justify-center shadow-lg"
->
-  <span className="btn-effect__fill" aria-hidden />
-  <span className="btn-effect__label">Buy now</span>
-</Link>
+            <div>
+              <BuyButton className="px-6 py-2 text-sm font-semibold" label="Buy now" />
+            </div>
 
           </div>
         </div>

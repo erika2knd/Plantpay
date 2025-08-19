@@ -12,10 +12,10 @@ export default function FAQ() {
         <div className="mt-14 flex flex-wrap items-start gap-4 md:gap-6">
   {faqs.map(({ q, a }) => (
     <details
-      key={q}
-      className="group w-full md:w-[calc(50%-12px)] rounded-[30px] border border-white/10 bg-white/5 px-5 py-4
-                 open:bg-white/7 open:shadow-lg transition"
-            >
+  key={q}
+  className="group w-full md:w-[calc(50%-12px)] rounded-[30px] border border-white/10 bg-white/5 px-5 py-4
+             open:bg-white/7 open:shadow-lg transition min-h-[80px] flex flex-col justify-between"
+>
               <summary
                 className="flex items-start justify-between gap-4 cursor-pointer select-none
                            text-white text-base font-medium list-none

@@ -7,7 +7,6 @@ export default function ContactForm() {
   async function onSubmit(e) {
     e.preventDefault();
 
-    // Сохраняем ссылку на форму ДО await
     const formEl = e.currentTarget;
     const data = Object.fromEntries(new FormData(formEl).entries());
 
@@ -24,7 +23,7 @@ export default function ContactForm() {
       if (!res.ok) throw new Error(out.message || "Request failed");
 
       setState({ loading: false, ok: true, error: "" });
-      formEl.reset();                // <-- используем сохранённую ссылку
+      formEl.reset();                
     } catch (err) {
       setState({ loading: false, ok: false, error: err.message || "Something went wrong" });
     }

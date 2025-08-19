@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BuyButton from "../components/BuyButton";
 export default function CareEssentials() {
   return (
     <section id="care" className="relative w-full bg-black">
@@ -16,13 +17,9 @@ export default function CareEssentials() {
     tools — just simple care that fits into your daily life.
   </p>
 
-  <Link
-  href="#buy"
-  className="btn-effect px-6 py-2 text-sm font-semibold mt-6 inline-flex items-center justify-center shadow-lg"
->
-  <span className="btn-effect__fill" aria-hidden />
-  <span className="btn-effect__label">Add to cart</span>
-</Link>
+  <div>
+    <BuyButton className="px-6 py-2 mt-6 text-sm font-semibold" label="Add to cart" />
+  </div>
 </div>
 
 

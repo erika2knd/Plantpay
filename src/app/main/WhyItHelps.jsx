@@ -22,24 +22,29 @@ export default function WhyItHelps() {
             your mood every day.
           </p>
 
-          <div className="mt-6 flex items-center gap-6 text-sm text-zinc-300 whitespace-nowrap overflow-x-auto no-scrollbar">
-  <span className="flex items-center gap-2">
+          <div className="mt-6 grid grid-cols-2 gap-6 text-sm text-zinc-300 md:flex md:items-center md:gap-6">
+  <span className="flex flex-col items-center gap-1 text-center md:flex-row md:text-left md:whitespace-nowrap">
     <img src="/icons/air.png" alt="Air purifier" className="h-6 w-6" />
-    Air purifier
+    <span>Air purifier</span>
   </span>
-  <span className="flex items-center gap-2">
+
+  <span className="flex flex-col items-center gap-1 text-center md:flex-row md:text-left md:whitespace-nowrap">
     <img src="/icons/no-stress.png" alt="Stress relief" className="h-6 w-6" />
-    Stress relief
+    <span>Stress relief</span>
   </span>
-  <span className="flex items-center gap-2">
+
+  <span className="flex flex-col items-center gap-1 text-center md:flex-row md:text-left md:whitespace-nowrap">
     <img src="/icons/good-mood.png" alt="Mood booster" className="h-6 w-6" />
-    Mood booster
+    <span>Mood booster</span>
   </span>
-  <span className="flex items-center gap-2">
+
+  <span className="flex flex-col items-center gap-1 text-center md:flex-row md:text-left md:whitespace-nowrap">
     <img src="/icons/home.png" alt="Home friendly" className="h-6 w-6" />
-    Home-friendly
+    <span>Home-friendly</span>
   </span>
 </div>
+
+
 
         </div>
       </div>
